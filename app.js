@@ -240,6 +240,32 @@ Exercise 14: Accessing within nested arrays
 Complete Exercise 14 in the space below:
 */
 
-
+const num = numArrays[2][1];
 
 console.log('Exercise 14 result:', num);
+
+/*
+Exercise 15: Nested array sum
+
+1) Use nested loops or `forEach()` methods to sum up all numbers within 
+   `numArrays` nested arrays.
+   
+2) Assign the sum to a variable called `total`.
+
+Hint: Be sure to declare and initialize the total variable before the iterations.
+
+Complete Exercise 15 in the space below:
+*/
+
+let total1 = 0;
+let total2 = 0;
+let total3 = 0;
+let total4 = 0;
+numArrays[0].forEach((i) => total1 += i);
+numArrays[1].forEach((i) => total2 += i);
+numArrays[2].forEach((i) => total3 += i);
+numArrays[3].forEach((i) => total4 += i);
+
+total = total1 + total2 + total3 + total4;
+
+console.log('Exercise 15 result:\n', total);
